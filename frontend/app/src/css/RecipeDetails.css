@@ -1,0 +1,132 @@
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  background: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-x: hidden;
+}
+
+.spline-background {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+  pointer-events: none;
+  filter: brightness(0.7);
+}
+
+.recipe-details-wrapper {
+  background: #fff;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  color: #222;
+  text-align: center;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+/* Fixed size image: 7cm width, 5cm height */
+.recipe-image-fixed {
+  width: 7cm;   /* approx 263px */
+  height: 5cm;  /* approx 188px */
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0 auto 30px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.recipe-image-fixed:hover {
+  transform: scale(1.05);
+}
+
+.recipe-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.recipe-category {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 6px;
+  color: #007bff;
+}
+
+.ingredients-list {
+  list-style: disc inside;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  text-align: left;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ingredients-list li {
+  margin-bottom: 8px;
+}
+
+.recipe-steps {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #444;
+  white-space: pre-line;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .recipe-details-wrapper {
+    padding: 20px;
+  }
+  .recipe-image-fixed {
+    width: 90vw;
+    height: auto;
+  }
+  .recipe-title {
+    font-size: 1.8rem;
+  }
+  .section-title {
+    font-size: 1.3rem;
+  }
+  .ingredients-list,
+  .recipe-steps {
+    max-width: 100%;
+    text-align: left;
+  }
+}
