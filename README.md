@@ -12,8 +12,8 @@ Users can **create, view, search, update, and delete recipes** easily with a cle
 - **View All Recipes** with responsive layout
 - **Search Recipes** by name or ingredients
 - **Update & Delete Recipes**
-- **Optional Authentication** for secure recipe management
-- **AI-Powered Suggestions** *(if implemented)*
+- Authentication** for secure recipe management
+- **AI-Powered Suggestions** 
 
 ---
 
